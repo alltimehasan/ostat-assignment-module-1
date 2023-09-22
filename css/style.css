@@ -21,13 +21,7 @@ p:last-child {
 span.text-bold {
     font-weight: 700;
 }
-.module {
-    margin-bottom: 30px;
-}
-.module-tasks {
-    list-style: none;
-}
-.module-tasks li a {
+.side-nav .nav-link {
     text-decoration: none;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -41,45 +35,28 @@ span.text-bold {
     border-radius: 3px;
     transition: all 0.25s;
 }
-.module-tasks li a:hover {
+.side-nav .nav-link.active {
     background-color: #101828;
     color: #fff;
 }
-.module-title {
-    display: flex;
-    margin-bottom: 15px;
-    align-items: center;
-    justify-content: flex-start;
-    align-content: center;
-    gap: 15px;
-}
-.module h1 {
-    font-size: 40px;
-    line-height: 55px;
-    color: #344050;
-}
-.module-back-btn {
-    background-color: #ff8c4b;
+.side-nav .nav-link:hover {
+    background-color: #101828;
     color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 12px 15px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    display: block;
 }
-.module p {
-    margin-bottom: 0;
-    line-height: 22px;
-}
-.module-wrapper {
-    max-width: 1024px;
-    margin: 30px auto;
-    padding: 30px;
+.task {
     background-color: #fff;
+    padding: 30px;
     box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
-    border-radius: 3px;
+}
+h2.task-title {
+    margin-bottom: 30px;
+    color: #101828;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+}
+.module-form {
+    max-width: 550px;
 }
 .module-form label {
     display: block;
@@ -94,7 +71,6 @@ span.text-bold {
 .module-form input:focus,
 .module-form select:focus {
     padding: 10px;
-    min-width: 350px;
     border: 1px solid lightgray;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
@@ -103,12 +79,8 @@ span.text-bold {
     box-shadow: none;
     border-radius: 3px;
 }
-.module-form .input-group {
-    margin-bottom: 15px;
-}
 .module-form button {
-    padding: 10px;
-    min-width: 350px;
+    padding: 10px 30px;
     border: none;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
